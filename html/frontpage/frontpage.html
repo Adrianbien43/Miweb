@@ -26,6 +26,25 @@
         </nav>
 
     </header>
+    <header class="headermobile">
+        <h1>M-X-L</h1>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <nav>
+            <ul id="navMenu">
+                <li><a href="#">Información</a></li>
+                <li><a href="#">Proyectos</a></li>
+                <li><a href="#">Eventos</a></li>
+                <li><a href="#">Ayudas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        function toggleMenu() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('show');
+        }
+    </script>
 
 
     <main>
@@ -199,7 +218,7 @@
                         <p>No se puede atravesar el mar simplemente mirando el agua.</p>
                     </div>
                     <div class="button-magic">
-                        <div class="butto-magic-1"> 
+                        <div class="butto-magic-1">
                             <button class="magic button-1">Sitio web</button>
                         </div>
                     </div>
@@ -209,7 +228,38 @@
         </div>
     </main>
 
-    <footer>
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="imagenes/logos/logoX.png" alt="Logo de M-x-L">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>Sobre nosotros</h2>
+                <p>Soy un chico pasionado por la fantacia</p>
+                <p>Soy un chico pasionado por la fantacia</p>
+            </div>
+            <div class="red-socila">
+                <div>
+                    <a href="#"><img src="imagenes/logos/logo.svg" alt="yotube"></a>
+                </div>
+                <div>
+                    <a href="#"><img src="imagenes/logos/logo1.svg" alt="yotube"></a>
+                </div>
+                <div>
+                    <a href="#"><img src="imagenes/logos/logo2.svg" alt="yotube"></a>
+                </div>
+
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2024 <b>M-X-L</b>- Todos los Derechos Reservados</small>
+
+        </div>
+
 
     </footer>
 

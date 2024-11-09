@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap');
+
+/* Reset de márgenes y rellenos para evitar comportamientos inesperados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Contenedor principal de la página, que ocupa toda la altura de la pantalla */
+.contenedor-principal {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ocupa toda la altura de la pantalla */
+}
+
+/* El contenido principal se expande para ocupar el espacio disponible */
+main {
+    flex: 1;
+    margin: 0;  /* Sin márgenes adicionales en el contenido */
+}
+
+/* Estilo general para el pie de página */
+.pie-pagina {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    padding: 10px 0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin-top: auto;  /* Asegura que el footer se mueva al fondo */
+}
+
+/* Contenedor principal del pie de página */
+.grupo-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.grupo-1 .box figure img{
+    width: 80px;
+    margin: 10px;
+}
+
+
+/* Caja que contiene los elementos dentro del pie de página */
+.box {
+    flex: 1 1 150px; /* Reducido el tamaño mínimo de las cajas */
+    margin: 5px;
+}
+
+/* Estilo para los títulos en el pie */
+.box h2 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+/* Estilo para los párrafos dentro de las cajas */
+.box p {
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+/* Estilo para la sección de redes sociales */
+.red-socila {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+/* Estilo para cada icono de red social */
+.red-socila a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto al pasar el ratón sobre los iconos */
+.red-socila a:hover img {
+    transform: scale(1.1);
+}
+
+/* Contenedor del texto en la segunda fila */
+.grupo-2 {
+    text-align: center;
+    font-size: 12px;
+}
+
+/* Estilo para el texto pequeño */
+.grupo-2 small {
+    color: #ccc;
+}
+
+/* Media queries para hacer el footer completamente responsivo */
+@media (max-width: 768px) {
+    .grupo-1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        text-align: center;
+    }
+
+    .red-socila {
+        justify-content: center;
+    }
+
+    .grupo-2 small {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pie-pagina {
+        padding: 8px 0;  /* Aún más pequeño en pantallas pequeñas */
+    }
+
+    .box h2 {
+        font-size: 14px;  /* Títulos más pequeños */
+    }
+
+    .box p {
+        font-size: 11px;  /* Párrafos más pequeños */
+    }
+
+    .red-socila a img {
+        width: 25px;  /* Iconos aún más pequeños */
+        height: 25px;  /* Iconos aún más pequeños */
+    }
+
+    .grupo-2 small {
+        font-size: 10px;  /* Texto más pequeño */
+    }
+}

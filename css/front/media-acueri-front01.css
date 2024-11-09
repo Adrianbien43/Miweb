@@ -14,8 +14,6 @@ header {
     padding: 32px 0;
 }
 
-
-
 nav {
     margin-top: 30px;
 }
@@ -27,7 +25,44 @@ nav a {
 }
 
 
-@media (max-width:800px){
+/*In this part I will edit the new header, we will see how it turns out.*/
+
+.headermobile {
+    display: none;
+}
+
+.headermobile nav ul {
+    display: flex;
+    list-style: none;
+    transition: transform 0.4s ease;
+    position: absolute; 
+    top: 100%; 
+    right: 0; 
+    padding: 1em 0; 
+    transform: translateY(-20px); 
+    opacity: 0; 
+    visibility: hidden; 
+}
+
+.headermobile nav ul.show {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible; 
+}
+
+
+.menu-icon {
+    display: none;
+    font-size: 1.8em;
+    cursor: pointer;
+    margin-left: auto; 
+    z-index: 101; 
+}
+
+
+/*In this part are all the media queries*/
+
+@media (max-width:800px) {
 
     header {
         display: flex;
@@ -37,7 +72,7 @@ nav a {
         text-align: left;
         padding: 32px 10px;
     }
-    
+
     nav {
         margin-top: 13px;
     }
@@ -50,9 +85,7 @@ nav a {
 
 }
 
-
-
-@media (max-width:700px){
+@media (max-width:700px) {
 
     header {
         display: flex;
@@ -60,14 +93,70 @@ nav a {
         align-items: center;
         padding: 10px;
     }
-    
+
+    nav {
+        margin-top: 10px;
+    }
+
     nav a {
         margin: 0 10px;
     }
 }
 
-@media (max-width:500px){
+@media (max-width:590px) {
 
+    header {
+        display: none;
+    }
 
+    .headermobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em 2em;
+        background-color: black;
+        color: white;
+        position: relative;
+        z-index: 9;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .headermobile h1 {
+        font-size: 1.8em;
+        font-weight: 700;
+    }
+    .menu-icon {
+        display: block;
+    }
+
+    .headermobile nav ul {
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(to bottom, black,rgb(168, 168, 168), black);
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 150px;
+        padding-top: 1em;
+        z-index: 10;
+    }
+
+    .headermobile nav ul li {
+        margin: 1em 0;
+        text-align: center;
+    }
+
+    .headermobile nav ul li a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-size: 1em;
+        font-weight: 500;
+        padding: 0.5em;
+        transition: color 0.3s ease;
+    }
+        
+    .headermobile nav ul li a:hover {
+        color: #00d9ff;
+    }
 
 }
