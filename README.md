@@ -4,7 +4,7 @@
 
 ## Información:📖
 
-#### Información, de que va el proyecto:
+#### -Información, de que va el proyecto:
 
 <p>
 Magic X Logic es un proyecto ambicioso cuyo objetivo es crear un universo propio inspirado en la estructura de Marvel o DC, pero con una temática de ambientación mágica. Este proyecto llevará años en completarse. La idea principal es aprovechar todos mis conocimientos para darle visibilidad y mejorar su alcance, y creo que la página web será una herramienta clave para lograrlo. Mi prioridad es aprender a desarrollar una página web de alta calidad para que, en el futuro (¡esperemos que no muy lejano!), este proyecto pueda escalar significativamente.
