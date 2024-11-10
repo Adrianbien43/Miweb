@@ -18,6 +18,31 @@ Magic X Logic es un proyecto ambicioso cuyo objetivo es crear un universo propio
 
 #### Estructura del proyecto:
 
+- Miweb
+  - html
+    - index.html
+    - frontpage
+      - form.html
+      - frontpage.html
+    - painting
+      - galery.html
+      - painting001.html
+  - css
+    - front
+      - from.css
+      - front.css
+      - galery.css
+      - galery1.css
+      - media-acuri-front01.css
+    - styles.css
+    - styles1.css 
+  - javascrip
+    - scripfronttpage.js
+    - scriptfrom.js
+  imagery
+  
+    
+
 #### Librerias utilizadas:
 
 
