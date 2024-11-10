@@ -31,4 +31,28 @@ Magic X Logic es un proyecto ambicioso cuyo objetivo es crear un universo propio
 - Ha sido mejorado con recursos de W3Schools, apuntes de LND y guías de YouTube.
 - Todas las imagenes tienen derecho de autor.
 
+## Instalación y actualizar:
+
+1. Instalamos la consola: git
+
+### Instalación:
+<p>Pueden instalar la web, con las siguientes instruciones.</p>
+
+- Abrimos la consola donde quieres desacragar el proyecto.
+- Despues copiamos la url HTTPS.
+- Utilizamos el comando: git clone "Seguido pegamos la url que copiemos antes."
+
+### Actualizar:
+<p>Pueden actualizar la web, con las siguientes instruciones.</p>
+
+- Recuerda para actualizar los repositorios tienen que estar dentro del proyecto.
+- Utilizamos los siguientes comandos:
+  - git add .
+  - git commit -m "Descripción de cambios"
+  - git push
+- Puede ser que te pida que configures tu usuario y correo, utilizamos los siguientes comandos:
+  - git config --global user.name "Nombre-usuario"
+  - git config --global user.email micorreo@gmail.com
+
+
 ### FIN
