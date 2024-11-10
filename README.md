@@ -1,8 +1,10 @@
+
+
 #MiWeb
 Magic X Logic
 
 ## Información:
-### 1º Este es un proyecto web que funcionará como catalizador para la promoción de un proyecto de mayor envergadura.
+1. Este es un proyecto web que funcionará como catalizador para la promoción de un proyecto de mayor envergadura.
 ### 2º Todas las imágenes de esta página son originales y no tienen derechos de autor externos, ya que han sido creadas por el mismo autor.
 ### 3º La página se ha desarrollado gracias a los conocimientos, proyectos y prácticas acumuladas.
 ### 4º Ha sido mejorado con recursos de W3Schools, apuntes de LND y guías de YouTube.
