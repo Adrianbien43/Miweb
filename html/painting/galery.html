@@ -1,21 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
     <link rel="stylesheet" href="../../css/front/galery.css">
+    <link rel="stylesheet" href="../../css/front/galery1.css">
+
 </head>
+
 <body>
-    <div>
-    <section>
-        <img src="../../imagenes/imgweb/angel003.jpeg" alt="">
-        <img src="../../imagenes/imgweb/filo003.jpeg" alt="">
-        <img src="../../imagenes/imgweb/angel004.jpeg" alt="">
-        <img src="../../imagenes/imgweb/filo004.jpeg" alt="">
-        <img src="../../imagenes/imgweb/angel005.jpeg" alt="">
-        <img src="../../imagenes/imgweb/filo001.jpeg" alt="">
-    </section>
-    </div>
+
+    <header>
+
+        <div class="headingTitle">
+            <a href="../index.html">
+                <h1>Magic X Logic</h1>
+            </a>
+        </div>
+
+        <nav>
+            <a href="#">Información</a>
+            <a href="#">Proyectos</a>
+            <a href="#">Eventos</a>
+            <a href="#">Ayudas</a>
+        </nav>
+
+    </header>
+    <header class="headermobile">
+        <a href="../index.html">
+            <h1>M-X-L</h1>
+        </a>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <nav>
+            <ul id="navMenu">
+                <li><a href="#">Información</a></li>
+                <li><a href="#">Proyectos</a></li>
+                <li><a href="#">Eventos</a></li>
+                <li><a href="#">Ayudas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script src="../../javascrip/scripfrontpage.js"></script>
+
+    <main>
+        <div>
+            <section>
+                <img src="../../images/imgweb/angel003.jpeg" alt="">
+                <img src="../../images/imgweb/filo003.jpeg" alt="">
+                <img src="../../images/imgweb/angel004.jpeg" alt="">
+                <img src="../../images/imgweb/filo004.jpeg" alt="">
+                <img src="../../images/imgweb/angel005.jpeg" alt="">
+                <img src="../../images/imgweb/filo001.jpeg" alt="">
+            </section>
+        </div>
+
+        <div class="button">
+            <a href="../frontpage/form.html" class="botton-redireccion">CUESTIONARIO</a>
+        </div>
+
+
+    </main>
+
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="../../images/logos/logoX.png" alt="Logo de M-x-L">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>Sobre todo el proyecto</h2>
+                <p>Soy un chico pasionado por la fantacia</p>
+            </div>
+            <div class="red-socila">
+                <div>
+                    <a href="#"><img src="../../images/logos/logo.svg" alt="yotube"></a>
+                </div>
+                <div>
+                    <a href="#"><img src="../../images/logos/logo1.svg" alt="yotube"></a>
+                </div>
+                <div>
+                    <a href="#"><img src="../../images/logos/logo2.svg" alt="yotube"></a>
+                </div>
+
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2024 <b>M-X-L</b>- Todos los Derechos Reservados</small>
+
+        </div>
+    </footer>
+
 </body>
+
 </html>

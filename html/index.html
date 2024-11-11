@@ -4,133 +4,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Magic X Logic</title>
+
 
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/styles1.css">
-
 </head>
 
-</body>
+<body>
 
-<header class="desktop-header">
-    
-    <nav>
-        <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-        </ul>
-    </nav>
 
-  
-    <div class="logo">MiLogo</div>
+    <header class="desktop-header">
+        <nav>
+            <ul>
+                <li><a href="#">Eventos</a></li>
+                <li><a href="frontpage/frontpage.html">Personajes</a></li>
+            </ul>
+        </nav>
 
-    
-    <nav>
-        <ul>
-            <li><a href="#nosotros">Nosotros</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
-</header>
+        <div class="logo">MAGIC X LOGIC</div>
 
-<header class="mobile-header">
-    
-    <div class="logo">MiLogo</div>
+        <nav>
+            <ul>
+                <li><a href="painting/galery.html">Historias</a></li>
+                <li><a href="#contacto">Ayudas</a></li>
+            </ul>
+        </nav>
+    </header>
 
- 
-    <button class="menu-btn" onclick="toggleMobileMenu()">☰</button>
 
-  
-    <div class="mobile-menu" id="mobileMenu">
-        <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#nosotros">Nosotros</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
+    <div class="mobile-header">
+        <div class="logo">M-X-L</div>
+        <button class="menu-btn" onclick="toggleMobileMenu()" aria-label="Abrir menú móvil">☰</button>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <ul>
+                <li><a href="#inicio">Eventos</a></li>
+                <li><a href="frontpage/frontpage.html">Personajes</a></li>
+                <li><a href="painting/galery.html">Historias</a></li>
+                <li><a href="#contacto">Ayudas</a></li>
+            </ul>
+        </div>
     </div>
-</header>
 
-<script>
-    // Función para mostrar/ocultar el menú móvil
-    function toggleMobileMenu() {
-        const mobileMenu = document.getElementById('mobileMenu');
-        mobileMenu.classList.toggle('show');
-    }
-</script>
 
-</html>
-
-<main>
-    <diV>
-        <div>
+    <main>
+        <section>
             <h1>Magic X Logic</h1>
             <p>
                 Magic X Logic es un universo donde la magia y la lógica científica coexisten en un equilibrio frágil
                 y a menudo en conflicto. Este mundo está poblado por facciones que representan ambos poderes:
             </p>
-        </div>
-        <div>
+        </section>
+
+        <section>
             <h2>Magic</h2>
             <p>
                 En Magic X Logic, la magia es la energía pura emanada del Vínculo Eterno, un ser multiversal que
                 conecta todas las dimensiones y seres vivos. Los Ángeles de Batalla canalizan esta magia a través de
                 un vínculo especial con espíritus mágicos, entidades que representan diversos aspectos del poder
-                cósmico. Estos espíritus les otorgan habilidades únicas y refuerzan su conexión con el Vínculo
-                Eterno, permitiéndoles manipular fuerzas místicas y desafiar las leyes físicas. La magia, en este
-                universo, es una manifestación viviente de la esencia del Vínculo Eterno y es vista como la conexión
-                sagrada con lo trascendental.
+                cósmico.
             </p>
-        </div>
-        <div>
+        </section>
+
+        <section>
             <h2>Logic</h2>
             <p>
                 En Magic X Logic, la Lógica es una fuerza derivada de los conocimientos de los Locrosf, una raza
                 ancestral que dominó las leyes fundamentales del universo. Los Filósofos, guerreros de la lógica,
-                utilizan este poder gracias a un sistema de "lógica pura" transmitido por los Locrosf,
-                permitiéndoles manipular la realidad de acuerdo con principios científicos y matemáticos absolutos.
-                Mediante artefactos y técnicas avanzadas, los Filósofos pueden desafiar las fuerzas mágicas de los
-                Ángeles de Batalla, utilizando una "lógica perfecta" que les otorga control sobre las leyes físicas
-                y un conocimiento extremo del cosmos.
+                utilizan este poder gracias a un sistema de "lógica pura" transmitido por los Locrosf, permitiéndoles
+                manipular la realidad según principios científicos y matemáticos.
             </p>
-        </div>
-    </diV>
-</main>
-<footer class="pie-pagina">
-    <div class="grupo-1">
-        <div class="box">
-            <figure>
-                <a href="#">
-                    <img src="../imagenes/logos/logoX.png" alt="Logo de M-x-L">
-                </a>
-            </figure>
-        </div>
-        <div class="box">
-            <h2>Sobre nosotros</h2>
-            <p>Soy un chico pasionado por la fantacia</p>
-            <p>Soy un chico pasionado por la fantacia</p>
-        </div>
-        <div class="red-socila">
-            <div>
-                <a href="#"><img src="../imagenes/logos/logo.svg" alt="yotube"></a>
-            </div>
-            <div>
-                <a href="#"><img src="../imagenes/logos/logo1.svg" alt="yotube"></a>
-            </div>
-            <div>
-                <a href="#"><img src="../imagenes/logos/logo2.svg" alt="yotube"></a>
-            </div>
-        
-        </div>
-    </div>
-    <div class="grupo-2">
-        <small>&copy; 2024 <b>M-X-L</b>- Todos los Derechos Reservados</small>
+        </section>
+    </main>
 
-    </div>
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="../images/logos/logoX.png" alt="Logo de M-X-L">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>Sobre nosotros</h2>
+                <p>Soy un chico apasionado por la fantasía</p>
+            </div>
+            <div class="red-social">
+                <a href="#"><img src="../images/logos/logo.svg" alt="Logo de YouTube"></a>
+                <a href="#"><img src="../images/logos/logo1.svg" alt="Logo de Facebook"></a>
+                <a href="#"><img src="../images/logos/logo2.svg" alt="Logo de Twitter"></a>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2024 <b>M-X-L</b> - Todos los Derechos Reservados</small>
+        </div>
+    </footer>
 
 
-</footer>
+    <script src="../../javascrip/scriptindex.js"></script>
+
+
 </body>
 
 </html>

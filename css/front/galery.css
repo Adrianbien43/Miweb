@@ -1,5 +1,4 @@
 
-
 section{
     display: flex;
     width: 100%;
@@ -20,3 +19,46 @@ section img:hover{
     opacity: 1;
     filter: contrast(120%);
 }
+
+
+.button{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  background-color: black;
+}
+
+.botton-redireccion {
+    background: #fff; 
+    color: #4741d7; 
+    border: 2px solid #4741d7;
+    padding: 16px 20px;
+    border-radius: 3px; 
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+  }
+  .botton-redireccion:hover {
+    color: #fff;
+  }
+  .botton-redireccion::after {
+    content: "";
+    background: #4741d7;
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    border-radius: 50%;
+    left: -50%;
+    right: -50%;
+    top: -150%;
+    bottom: -150%;
+    transform: scale(0, 0);
+    transition: all 0.4s ease;
+  }
+  .botton-redireccion:hover::after {
+    transition: all 0.6s ease-out;
+    transform: scale(1, 1);
+  }

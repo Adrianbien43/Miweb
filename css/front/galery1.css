@@ -1,0 +1,252 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+header {
+    background-color: #a3a3a3;
+    padding: 10px;
+    text-align: center;
+
+}
+
+nav {
+    margin-top: 30px;
+}
+
+nav a {
+    margin: 0 30px;
+    text-decoration: none;
+    color: #333;
+}
+
+
+/*In this part I will edit the new header, we will see how it turns out.*/
+
+.headermobile {
+    display: none;
+}
+
+.headermobile nav ul {
+    display: flex;
+    list-style: none;
+    transition: transform 0.4s ease;
+    position: absolute; 
+    top: 100%; 
+    right: 0; 
+    padding: 1em 0; 
+    transform: translateY(-20px); 
+    opacity: 0; 
+    visibility: hidden; 
+}
+
+.headermobile nav ul.show {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible; 
+}
+
+
+.menu-icon {
+    display: none;
+    font-size: 1.8em;
+    cursor: pointer;
+    margin-left: auto; 
+    z-index: 101; 
+}
+
+
+.pie-pagina {
+    background-color: #222;
+    color: #fff;
+    padding: 1.5rem 1rem;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+.grupo-1 {
+    display: flex;
+    justify-content: center;
+    gap: 70%;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.grupo-1 .box {
+    margin-bottom: 0.8rem;
+}
+
+.grupo-1 .box figure img {
+    width: 50px;
+    margin-bottom: 0.5rem;
+}
+
+.box h2 {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+}
+
+.box p {
+    text-align: justify;
+    font-size: 11px;
+    color: #bbb;
+    line-height: 1.4;
+}
+
+
+.red-social {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 0.8rem;
+}
+
+.red-social a img {
+    width: 24px;
+    height: 24px;
+    opacity: 0.8;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.red-social a:hover img {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+
+.grupo-2 {
+    text-align: center;
+    font-size: 11px;
+    margin-top: 1rem;
+}
+
+.grupo-2 small {
+    color: #ccc;
+}
+
+.grupo-2 a {
+    color: #ffcc00;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.grupo-2 a:hover {
+    color: #fff;
+}
+
+
+
+
+/*In this part are all the media queries*/
+
+@media (max-width:800px) {
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        background-color: #a3a3a3;
+        padding: 20px;
+        text-align: left;
+        padding: 32px 10px;
+    }
+
+    nav {
+        margin-top: 13px;
+    }
+
+    nav a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: #333;
+    }
+
+}
+
+@media (max-width:700px) {
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    nav a {
+        margin: 0 10px;
+    }
+}
+
+@media (max-width:590px) {
+
+    header {
+        display: none;
+    }
+
+    .headermobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em 2em;
+        background-color: black;
+        color: white;
+        position: relative;
+        z-index: 9;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .headermobile h1 {
+        font-size: 1.8em;
+        font-weight: 700;
+    }
+    .menu-icon {
+        display: block;
+    }
+
+    .headermobile nav ul {
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(to bottom, black,rgb(168, 168, 168), black);
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 150px;
+        padding-top: 1em;
+        z-index: 10;
+    }
+
+    .headermobile nav ul li {
+        margin: 1em 0;
+        text-align: center;
+    }
+
+    .headermobile nav ul li a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-size: 1em;
+        font-weight: 500;
+        padding: 0.5em;
+        transition: color 0.3s ease;
+    }
+        
+    .headermobile nav ul li a:hover {
+        color: #00d9ff;
+    }
+
+}

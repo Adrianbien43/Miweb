@@ -113,3 +113,91 @@ main {
 .magic:hover {
     text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #00ccff;
 }
+
+
+.pie-pagina {
+    background-color: #222;
+    color: #fff;
+    padding: 1.5rem 1rem;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+.grupo-1 {
+    display: flex;
+    justify-content: center;
+    gap: 40%;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.grupo-1 .box {
+    margin-bottom: 0.8rem;
+}
+
+.grupo-1 .box figure img {
+    width: 60px;
+    margin-bottom: 0.5rem;
+}
+
+.box h2 {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+}
+
+.box p {
+    text-align: justify;
+    font-size: 11px;
+    color: #bbb;
+    line-height: 1.4;
+}
+
+
+.red-social {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 0.8rem;
+}
+
+.red-social a img {
+    width: 24px;
+    height: 24px;
+    opacity: 0.8;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.red-social a:hover img {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+
+.grupo-2 {
+    text-align: center;
+    font-size: 11px;
+    margin-top: 1rem;
+}
+
+.grupo-2 small {
+    color: #ccc;
+}
+
+.grupo-2 a {
+    color: #ffcc00;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.grupo-2 a:hover {
+    color: #fff;
+}

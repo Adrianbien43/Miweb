@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario M-X-L</title>
+
+    <link rel="stylesheet" href="../../css/front/form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+</head>
+
+<body>
+
+    <form>
+        <h1 class="title">Manda tu opinion sobre los capitulos</h1>
+        <label>
+            <i class="fa-regular fa-user"></i>
+            <input type="text" placeholder="Nombre" id="name" required>
+        </label>
+
+        <label>
+            <i class="fa-solid fa-user-plus"></i>
+            <input type="text" placeholder="Apellido" id="surname">
+        </label>
+
+        <label>
+            <i class="fa-solid fa-envelope-open-text"></i>
+            <input type="email" placeholder="Mail" id="mail" required>
+        </label>
+
+        <label>
+            <i class="fa-solid fa-calendar-days"></i>
+            <input type="number" placeholder="Edad" id="years">
+        </label>
+
+        <label for="episode"> Capitulo:
+            <select id="episode">
+                <option value="< 1 "> 1º Capitulo </option>
+                <option value="< 2 "> 2º Capitulo </option>
+                <option value="< 3 "> 3º Capitulo </option>
+                <option value="< 4 "> 4º Capitulo </option>
+                <option value="< 5 "> 5º Capitulo </option>
+                <option value="< 6 "> 6º Capitulo </option>
+            </select>
+        </label>
+
+        <label for="observation">ideas:
+            <i class="fa-regular fa-lightbulb"></i>
+            <textarea rows="10" cols="50" id="observation"></textarea>
+        </label>
+
+        <label>
+            <i class="fa-solid fa-globe"></i>
+            <input type="text" placeholder="Pais" id="counstry">
+        </label>
+
+        <button type="submit" id="button">Enviar</button>
+    </form>
+
+    <script src="../../javascrip/scriptform.js"></script>
+
+</body>
+
+</html>
