@@ -2,12 +2,12 @@
 
 ###### ✒️Adrián Bienvenido Morales Perdomo✒️
 
-## Información:📖
+## Information:📖
 
-#### Descripción del proyecto:
+#### Project Description:
 
 <p>
-Magic X Logic es un proyecto ambicioso cuyo objetivo es crear un universo propio inspirado en la estructura de Marvel o DC, pero con una temática de ambientación mágica. Este proyecto llevará años en completarse. La idea principal es aprovechar todos mis conocimientos para darle visibilidad y mejorar su alcance, y creo que la página web será una herramienta clave para lograrlo. Mi prioridad es aprender a desarrollar una página web de alta calidad para que, en el futuro (¡esperemos que no muy lejano!), este proyecto pueda escalar significativamente.
+Magic X Logic is an ambitious project that aims to create a universe of its own inspired by the structure of Marvel or DC, but with a magical setting. This project will take years to complete. The main idea is to take advantage of all my knowledge to give it visibility and improve its reach, and I think the website will be a key tool to achieve this. My priority is to learn how to develop a high-quality website so that, in the future (hopefully not too far away!), this project can scale significantly.
 </p>
 
 #### Este proyecto esta conformado por:
