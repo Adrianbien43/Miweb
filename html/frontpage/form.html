@@ -7,6 +7,7 @@
     <title>Formulario M-X-L</title>
 
     <link rel="stylesheet" href="../../css/front/form.css">
+    <link rel="stylesheet" href="../../css/front/form1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
@@ -14,54 +15,122 @@
 </head>
 
 <body>
+    <header>
 
-    <form>
-        <h1 class="title">Manda tu opinion sobre los capitulos</h1>
-        <label>
-            <i class="fa-regular fa-user"></i>
-            <input type="text" placeholder="Nombre" id="name" required>
-        </label>
+        <div class="headingTitle">
+            <a href="../index.html">
+                <h1>Magic X Logic</h1>
+            </a>
+        </div>
 
-        <label>
-            <i class="fa-solid fa-user-plus"></i>
-            <input type="text" placeholder="Apellido" id="surname">
-        </label>
+        <nav>
+            <a href="#">Información</a>
+            <a href="#">Proyectos</a>
+            <a href="#">Eventos</a>
+            <a href="#">Ayudas</a>
+        </nav>
 
-        <label>
-            <i class="fa-solid fa-envelope-open-text"></i>
-            <input type="email" placeholder="Mail" id="mail" required>
-        </label>
+    </header>
+    <header class="headermobile">
+        <a href="../index.html">
+            <h1>M-X-L</h1>
+        </a>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <nav>
+            <ul id="navMenu">
+                <li><a href="#">Información</a></li>
+                <li><a href="#">Proyectos</a></li>
+                <li><a href="#">Eventos</a></li>
+                <li><a href="#">Ayudas</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <label>
-            <i class="fa-solid fa-calendar-days"></i>
-            <input type="number" placeholder="Edad" id="years">
-        </label>
+    <script src="../../javascrip/scripfrontpage.js"></script>
 
-        <label for="episode"> Capitulo:
-            <select id="episode">
-                <option value="< 1 "> 1º Capitulo </option>
-                <option value="< 2 "> 2º Capitulo </option>
-                <option value="< 3 "> 3º Capitulo </option>
-                <option value="< 4 "> 4º Capitulo </option>
-                <option value="< 5 "> 5º Capitulo </option>
-                <option value="< 6 "> 6º Capitulo </option>
-            </select>
-        </label>
 
-        <label for="observation">ideas:
-            <i class="fa-regular fa-lightbulb"></i>
-            <textarea rows="10" cols="50" id="observation"></textarea>
-        </label>
+    <main>
+        <form>
+            <h1 class="title">Manda tu opinion sobre los capitulos</h1>
+            <label>
+                <i class="fa-regular fa-user"></i>
+                <input type="text" placeholder="Nombre" id="name" required>
+            </label>
 
-        <label>
-            <i class="fa-solid fa-globe"></i>
-            <input type="text" placeholder="Pais" id="counstry">
-        </label>
+            <label>
+                <i class="fa-solid fa-user-plus"></i>
+                <input type="text" placeholder="Apellido" id="surname">
+            </label>
 
-        <button type="submit" id="button">Enviar</button>
-    </form>
+            <label>
+                <i class="fa-solid fa-envelope-open-text"></i>
+                <input type="email" placeholder="Mail" id="mail" required>
+            </label>
+
+            <label>
+                <i class="fa-solid fa-calendar-days"></i>
+                <input type="number" placeholder="Edad" id="years">
+            </label>
+
+            <label for="episode"> Capitulo:
+                <select id="episode">
+                    <option value="< 1 "> 1º Capitulo </option>
+                    <option value="< 2 "> 2º Capitulo </option>
+                    <option value="< 3 "> 3º Capitulo </option>
+                    <option value="< 4 "> 4º Capitulo </option>
+                    <option value="< 5 "> 5º Capitulo </option>
+                    <option value="< 6 "> 6º Capitulo </option>
+                </select>
+            </label>
+
+            <label for="observation">ideas:
+                <i class="fa-regular fa-lightbulb"></i>
+                <textarea rows="10" cols="50" id="observation"></textarea>
+            </label>
+
+            <label>
+                <i class="fa-solid fa-globe"></i>
+                <input type="text" placeholder="Pais" id="counstry">
+            </label>
+
+            <button type="submit" id="button">Enviar</button>
+        </form>
+    </main>
 
     <script src="../../javascrip/scriptform.js"></script>
+
+    
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="../../images/logos/logoX.png" alt="Logo de M-x-L">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>Sobre todo el proyecto</h2>
+                <p>Soy un chico pasionado por la fantacia</p>
+            </div>
+            <div class="red-socila">
+                <div>
+                    <a href="#"><img src="../../images/logos/logo.svg" alt="yotube"></a>
+                </div>
+                <div>
+                    <a href="#"><img src="../../images/logos/logo1.svg" alt="yotube"></a>
+                </div>
+                <div>
+                    <a href="#"><img src="../../images/logos/logo2.svg" alt="yotube"></a>
+                </div>
+
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2024 <b>M-X-L</b>- Todos los Derechos Reservados</small>
+
+        </div>
+    </footer>
 
 </body>
 

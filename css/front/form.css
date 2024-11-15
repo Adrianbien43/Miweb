@@ -1,14 +1,94 @@
+*{
+    margin: 0;
+}
+
+body{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    background: linear-gradient(180deg, rgb(0, 0, 0), rgb(255, 255, 255),
+    rgb(0, 0, 0));
+}
+
+header {
+    background-color: #a3a3a3;
+    padding: 20px;
+    text-align: center;
+}
+
+header a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+nav {
+    margin-top: 30px;
+}
+
+nav a {
+    margin: 0 30px;
+    text-decoration: none;
+    color: #333;
+}
+
+
+/*In this part I will edit the new header, we will see how it turns out.*/
+
+.headermobile {
+    display: none;
+}
+
+.headermobile nav ul {
+    display: flex;
+    list-style: none;
+    transition: transform 0.4s ease;
+    position: absolute; 
+    top: 100%; 
+    right: 0; 
+    padding: 1em 0; 
+    transform: translateY(-20px); 
+    opacity: 0; 
+    visibility: hidden; 
+}
+
+.headermobile nav ul.show {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible; 
+}
+
+
+.menu-icon {
+    display: none;
+    font-size: 1.8em;
+    cursor: pointer;
+    margin-left: auto; 
+    z-index: 101; 
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+}
+
+
 form {
     display: flex;
     flex-direction: column;
-    background: grey;
+    background: #000000;
     text-align: center;
-    padding: 20px 25px;
-    box-shadow: 0 5px 10px rgba(71, 3, 6, 0.7);
+    padding: 25px 30px;
+    box-shadow: 0 5px 20px rgba(255, 255, 255, 0.2);
+    max-width: 500px;
+    margin: 20px auto;
+    border-radius: 10px;
 }
 
-form .title{
-    color: black;
+form .title {
+    color: #ffffff;
     font-size: 35px;
     font-weight: 800;
     margin-bottom: 30px;
@@ -16,44 +96,162 @@ form .title{
 
 form label {
     margin-bottom: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-form label .fa-regular{
-    font-size: 20px;
-    color: brown;
-    margin-right: 10px;
-}
-
-
+form label .fa-regular,
 form label .fa-solid {
     font-size: 20px;
-    color: brown;
+    color: #ffffff;
     margin-right: 10px;
 }
 
-form label input {
+form label input,
+form label select,
+form label textarea {
     outline: none;
     border: none;
-    color: aqua;
-    border-bottom: solid 1px aqua;
-    padding: 0 5px;
+    color: #5c5c5c; 
+    border-bottom: 2px solid #ccc;
+    padding: 5px 10px;
     font-size: 18px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    background: #fff; 
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
 }
 
-form label input::placeholder{
-    color: black;
+form label input::placeholder {
+    color: #5c5c5c; 
+}
+
+form label textarea {
+    resize: vertical;
+    min-height: 100px;
+    max-width: 400px;
+    background: #fff; 
+}
+
+form label input:focus,
+form label select:focus,
+form label textarea:focus {
+    border-color: #333; 
 }
 
 form .link {
-    color: black;
+    color: #ccc; 
     margin-bottom: 15px;
 }
 
 form button {
-    color: azure;
+    color: #000000; 
     border: none;
-    background: linear-gradient(to right, red, pink);
+    background: linear-gradient(90deg, rgb(0, 0, 0), rgb(255, 255, 255),
+    rgb(0, 0, 0));
     padding: 10px 15px;
     cursor: pointer;
     font-size: 20px;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.2s ease;
+}
+
+form button:hover {
+    background: #6b6b6b;
+    transform: scale(1.05);
+}
+
+
+
+
+.pie-pagina {
+    background-color: #222;
+    color: #fff;
+    padding: 1.5rem 1rem;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+.grupo-1 {
+    display: flex;
+    justify-content: center;
+    gap: 40%;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.grupo-1 .box {
+    margin-bottom: 0.8rem;
+}
+
+.grupo-1 .box figure img {
+    width: 60px;
+    margin-bottom: 0.5rem;
+}
+
+.box h2 {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+}
+
+.box p {
+    text-align: justify;
+    font-size: 11px;
+    color: #bbb;
+    line-height: 1.4;
+}
+
+
+.red-social {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 0.8rem;
+}
+
+.red-social a img {
+    width: 24px;
+    height: 24px;
+    opacity: 0.8;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.red-social a:hover img {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+
+.grupo-2 {
+    text-align: center;
+    font-size: 11px;
+    margin-top: 1rem;
+}
+
+.grupo-2 small {
+    color: #ccc;
+}
+
+.grupo-2 a {
+    color: #ffcc00;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.grupo-2 a:hover {
+    color: #fff;
 }

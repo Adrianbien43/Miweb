@@ -5,6 +5,10 @@ section{
     height: 800px;
 }
 
+section h2{
+  display: none;
+}
+
 section img{
     width: 0px;
     flex-grow: 1;

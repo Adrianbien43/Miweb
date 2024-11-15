@@ -1,3 +1,65 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+header {
+    background-color: #a3a3a3;
+    padding: 20px;
+    text-align: center;
+    padding: 32px 0;
+}
+
+nav {
+    margin-top: 30px;
+}
+
+nav a {
+    margin: 0 30px;
+    text-decoration: none;
+    color: #333;
+}
+
+
+/*In this part I will edit the new header, we will see how it turns out.*/
+
+.headermobile {
+    display: none;
+}
+
+.headermobile nav ul {
+    display: flex;
+    list-style: none;
+    transition: transform 0.4s ease;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    padding: 1em 0;
+    transform: translateY(-20px);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.headermobile nav ul.show {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.menu-icon {
+    display: none;
+    font-size: 1.8em;
+    cursor: pointer;
+    margin-left: auto;
+    z-index: 101;
+}
+
+
 body {
     height: 100vh;
     background: linear-gradient(to bottom, white, black);
@@ -35,7 +97,7 @@ main {
 
 .paint-001 img {
     width: 100%;
-    height: 400px;
+    height: 500px;
     object-fit: cover;
 }
 
@@ -57,62 +119,12 @@ main {
 }
 
 .text-001 p {
-    text-align: center;
+    text-align: justify;
     font-size: 1em;
     color: #000000;
 }
 
 
-
-.button-magic {
-    margin: 10%;
-    width: 100px;
-    height: 30px;
-    position: relative;
-    z-index: 1;
-}
-
-.magic {
-    background-color: #111;
-    color: #0ff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 1.1em;
-    position: relative;
-    overflow: hidden;
-    transition: color 0.4s, transform 0.2s;
-    text-transform: uppercase;
-}
-
-.magic::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 255, 255, 0.5);
-    filter: blur(15px);
-    z-index: 0;
-    transition: opacity 0.4s;
-    opacity: 0;
-    border-radius: 5px;
-}
-
-.magic:hover::before {
-    opacity: 1;
-}
-
-.magic:hover {
-    color: #fff;
-    transform: scale(1.05);
-}
-
-.magic:hover {
-    text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #00ccff;
-}
 
 
 .pie-pagina {
