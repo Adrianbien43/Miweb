@@ -1,12 +1,12 @@
-*{
+* {
     margin: 0;
 }
 
-body{
+body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     background: linear-gradient(180deg, rgb(0, 0, 0), rgb(255, 255, 255),
-    rgb(0, 0, 0));
+            rgb(0, 0, 0));
 }
 
 header {
@@ -15,7 +15,7 @@ header {
     text-align: center;
 }
 
-header a{
+header a {
     color: rgb(0, 0, 0);
     text-decoration: none;
 }
@@ -41,19 +41,19 @@ nav a {
     display: flex;
     list-style: none;
     transition: transform 0.4s ease;
-    position: absolute; 
-    top: 100%; 
-    right: 0; 
-    padding: 1em 0; 
-    transform: translateY(-20px); 
-    opacity: 0; 
-    visibility: hidden; 
+    position: absolute;
+    top: 100%;
+    right: 0;
+    padding: 1em 0;
+    transform: translateY(-20px);
+    opacity: 0;
+    visibility: hidden;
 }
 
 .headermobile nav ul.show {
     transform: translateY(0);
     opacity: 1;
-    visibility: visible; 
+    visibility: visible;
 }
 
 
@@ -61,8 +61,8 @@ nav a {
     display: none;
     font-size: 1.8em;
     cursor: pointer;
-    margin-left: auto; 
-    z-index: 101; 
+    margin-left: auto;
+    z-index: 101;
 }
 
 
@@ -115,45 +115,45 @@ form label select,
 form label textarea {
     outline: none;
     border: none;
-    color: #5c5c5c; 
+    color: #5c5c5c;
     border-bottom: 2px solid #ccc;
     padding: 5px 10px;
     font-size: 18px;
     width: 100%;
     max-width: 400px;
     box-sizing: border-box;
-    background: #fff; 
+    background: #fff;
     border-radius: 5px;
     transition: border-color 0.3s ease;
 }
 
 form label input::placeholder {
-    color: #5c5c5c; 
+    color: #5c5c5c;
 }
 
 form label textarea {
     resize: vertical;
     min-height: 100px;
     max-width: 400px;
-    background: #fff; 
+    background: #fff;
 }
 
 form label input:focus,
 form label select:focus,
 form label textarea:focus {
-    border-color: #333; 
+    border-color: #333;
 }
 
 form .link {
-    color: #ccc; 
+    color: #ccc;
     margin-bottom: 15px;
 }
 
 form button {
-    color: #000000; 
+    color: #000000;
     border: none;
     background: linear-gradient(90deg, rgb(0, 0, 0), rgb(255, 255, 255),
-    rgb(0, 0, 0));
+            rgb(0, 0, 0));
     padding: 10px 15px;
     cursor: pointer;
     font-size: 20px;
@@ -162,96 +162,90 @@ form button {
 }
 
 form button:hover {
-    background: #6b6b6b;
+    color: #ffffff;
+    background: linear-gradient(90deg, rgb(255, 255, 255), rgb(0, 0, 0), rgb(0, 0, 0),
+            rgb(255, 255, 255));
     transform: scale(1.05);
 }
 
+/*----------------------------------------*/
 
-
-
-.pie-pagina {
-    background-color: #222;
-    color: #fff;
-    padding: 1.5rem 1rem;
-    font-size: 12px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+footer {
+    background-color: #111;
 }
 
+.footerContainer {
+    width: 100%;
+    padding: 30px 15px 10px;
+}
 
-.grupo-1 {
+.socialIcons {
     display: flex;
     justify-content: center;
-    gap: 40%;
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 1rem;
-    text-align: center;
-}
-
-.grupo-1 .box {
-    margin-bottom: 0.8rem;
-}
-
-.grupo-1 .box figure img {
-    width: 60px;
-    margin-bottom: 0.5rem;
-}
-
-.box h2 {
-    text-align: center;
-    font-size: 14px;
-    font-weight: bold;
-    margin-bottom: 0.3rem;
-}
-
-.box p {
-    text-align: justify;
-    font-size: 11px;
-    color: #bbb;
-    line-height: 1.4;
-}
-
-
-.red-social {
-    display: flex;
     gap: 8px;
+}
+
+.socialIcons a {
+    text-decoration: none;
+    padding: 6px;
+    background-color: white;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.socialIcons a i {
+    font-size: 0.9em;
+    color: black;
+    opacity: 0.9;
+}
+
+.socialIcons a:hover {
+    background-color: #5c5c5c;
+}
+
+.socialIcons a:hover i {
+    color: white;
+}
+
+.footerNav {
+    margin: 15px 0;
+}
+
+.footerNav ul {
+    display: flex;
     justify-content: center;
-    margin-top: 0.8rem;
+    list-style-type: none;
+    gap: 15px;
 }
 
-.red-social a img {
-    width: 24px;
-    height: 24px;
-    opacity: 0.8;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+.footerNav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9em;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
 }
 
-.red-social a:hover img {
-    transform: scale(1.1);
+.footerNav ul li a:hover {
     opacity: 1;
 }
 
-
-.grupo-2 {
+.footerBottom {
+    background-color: #000;
+    padding: 8px;
     text-align: center;
-    font-size: 11px;
-    margin-top: 1rem;
 }
 
-.grupo-2 small {
-    color: #ccc;
+.footerBottom p {
+    color: white;
+    font-size: 0.8em;
 }
 
-.grupo-2 a {
-    color: #ffcc00;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.grupo-2 a:hover {
-    color: #fff;
+.designer {
+    opacity: 0.5;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0 5px;
+    font-size: 0.7em;
 }

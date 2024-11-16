@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
 
 </head>
 
@@ -48,9 +52,8 @@
 
     <script src="../../javascrip/scripfrontpage.js"></script>
 
-
     <main>
-        <form>
+        <form id="form">
             <h1 class="title">Manda tu opinion sobre los capitulos</h1>
             <label>
                 <i class="fa-regular fa-user"></i>
@@ -72,7 +75,8 @@
                 <input type="number" placeholder="Edad" id="years">
             </label>
 
-            <label for="episode"> Capitulo:
+            <label for="episode">
+                <i class="fa-solid fa-sheet-plastic"></i>
                 <select id="episode">
                     <option value="< 1 "> 1º Capitulo </option>
                     <option value="< 2 "> 2º Capitulo </option>
@@ -83,9 +87,10 @@
                 </select>
             </label>
 
-            <label for="observation">ideas:
+            <label for="observation">
                 <i class="fa-regular fa-lightbulb"></i>
                 <textarea rows="10" cols="50" id="observation"></textarea>
+
             </label>
 
             <label>
@@ -93,42 +98,33 @@
                 <input type="text" placeholder="Pais" id="counstry">
             </label>
 
-            <button type="submit" id="button">Enviar</button>
+            <button type="butto" id="button">Enviar</button>
         </form>
     </main>
 
     <script src="../../javascrip/scriptform.js"></script>
 
-    
-    <footer class="pie-pagina">
-        <div class="grupo-1">
-            <div class="box">
-                <figure>
-                    <a href="#">
-                        <img src="../../images/logos/logoX.png" alt="Logo de M-x-L">
-                    </a>
-                </figure>
-            </div>
-            <div class="box">
-                <h2>Sobre todo el proyecto</h2>
-                <p>Soy un chico pasionado por la fantacia</p>
-            </div>
-            <div class="red-socila">
-                <div>
-                    <a href="#"><img src="../../images/logos/logo.svg" alt="yotube"></a>
-                </div>
-                <div>
-                    <a href="#"><img src="../../images/logos/logo1.svg" alt="yotube"></a>
-                </div>
-                <div>
-                    <a href="#"><img src="../../images/logos/logo2.svg" alt="yotube"></a>
-                </div>
 
+    <footer>
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
             </div>
+            <div class="footerNav">
+                <ul>
+                    <li><a href="">Casa</a></li>
+                    <li><a href="">Noticias</a></li>
+                    <li><a href="">Contacta</a></li>
+                    <li><a href="">Tienda</a></li>
+                </ul>
+            </div>
+
         </div>
-        <div class="grupo-2">
-            <small>&copy; 2024 <b>M-X-L</b>- Todos los Derechos Reservados</small>
-
+        <div class="footerBottom">
+            <p>© &copy;2024 M-X-L Todos los derechos reservados<span class="designer">Adrián</span></p>
         </div>
     </footer>
 

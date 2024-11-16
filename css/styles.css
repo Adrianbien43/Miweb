@@ -1,215 +1,208 @@
-@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap');
-
-
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
 }
 
 body {
-    font-family: Arial, sans-serif;
     display: grid;
-    min-height: 100vh;
+    min-height: 100dvh;
     grid-template-rows: auto 1fr auto;
-    background: linear-gradient(180deg, rgb(0, 0, 0), rgb(255, 255, 255),
-                                        rgb(0, 0, 0));
 }
 
+/*----------------------------------------------------*/
 
-header.desktop-header,
-.mobile-header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-}
-
-.desktop-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-
-.desktop-header .logo,
-.mobile-header .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
+header {
+    background-color: #a3a3a3;
+    padding: 20px;
     text-align: center;
-    flex: 1;
 }
 
-
-.desktop-header nav {
-    display: flex;
-    gap: 1.5rem;
-}
-
-.desktop-header nav ul {
-    display: flex;
-    gap: 1.5rem;
-    justify-content: space-around;
-}
-
-.desktop-header nav ul li a {
-    color: #fff;
+header a {
+    color: rgb(0, 0, 0);
     text-decoration: none;
-    transition: color 0.3s ease;
 }
 
-.desktop-header nav ul li a:hover {
-    color: #ffcc00;
+nav {
+    margin-top: 30px;
 }
 
-/* Menú móvil */
-.menu-btn {
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: #fff;
-    background: none;
-    border: none;
+nav a {
+    margin: 0 30px;
+    text-decoration: none;
+    color: #333;
 }
 
-.mobile-header {
+
+/*In this part I will edit the new header, we will see how it turns out.*/
+
+.headermobile {
     display: none;
 }
 
-@media (max-width: 767px) {
-
-    header.desktop-header {
-        display: none;
-    }
-
-
-    .mobile-header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    }
-
-    .mobile-menu {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: #222;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        z-index: 1000;
-        padding: 2rem;
-        transition: opacity 0.3s ease, transform 0.3s ease;
-        opacity: 0;
-        transform: translateX(-100%);
-    }
-
-    .mobile-menu.show {
-        display: flex;
-        opacity: 1;
-        transform: translateX(0);
-    }
-
-    .mobile-menu ul li {
-        margin: 1.5rem 0;
-    }
-
-    .mobile-menu ul li a {
-        text-decoration: none;
-        font-size: 1.5rem;
-        transition: color 0.3s ease;
-    }
-
-    .mobile-menu ul li a:hover {
-        color: #ffcc00;
-    }
-}
-
-
-.pie-pagina {
-    background-color: #222;
-    color: #fff;
-    padding: 1.5rem 1rem;
-    font-size: 12px;
+.headermobile nav ul {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    list-style: none;
+    transition: transform 0.4s ease;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    padding: 1em 0;
+    transform: translateY(-20px);
+    opacity: 0;
+    visibility: hidden;
 }
 
-
-.grupo-1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 1rem;
-    text-align: center;
-}
-
-.grupo-1 .box {
-    margin-bottom: 0.8rem;
-    text-align: center;
-}
-
-.grupo-1 .box figure img {
-    width: 60px;
-    margin-bottom: 0.5rem;
-}
-
-.box h2 {
-    font-size: 14px;
-    font-weight: bold;
-    margin-bottom: 0.3rem;
-}
-
-.box p {
-    font-size: 11px;
-    color: #bbb;
-    line-height: 1.4;
-}
-
-
-.red-social {
-    display: flex;
-    gap: 8px;
-    justify-content: center;
-    margin-top: 0.8rem;
-}
-
-.red-social a img {
-    width: 24px;
-    height: 24px;
-    opacity: 0.8;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.red-social a:hover img {
-    transform: scale(1.1);
+.headermobile nav ul.show {
+    transform: translateY(0);
     opacity: 1;
+    visibility: visible;
 }
 
 
-.grupo-2 {
+.menu-icon {
+    display: none;
+    font-size: 1.8em;
+    cursor: pointer;
+    margin-left: auto;
+    z-index: 101;
+}
+
+/*-----------------------------------*/
+
+
+main {
+    background: linear-gradient(180deg, #000000, #ffffff, #000000);
+    padding: 50px 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Secciones */
+main section {
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    background: linear-gradient(180deg, #f9f9f9, #dcdcdc);
+    transition: transform 0.3s ease;
+    /* Animación suave al hover */
+}
+
+main section:hover {
+    transform: scale(1.02);
+    background: linear-gradient(180deg, #f4f4f4, #c0c0c0);
+}
+
+/* Títulos */
+main section h2 {
+    font-size: 2rem;
+    color: #000;
+    /* Negro puro */
+    padding: 20px;
+    margin: 0;
+    background: linear-gradient(90deg, #000, #333);
+    color: #fff;
+    /* Texto blanco */
     text-align: center;
-    font-size: 11px;
-    margin-top: 1rem;
 }
 
-.grupo-2 small {
-    color: #ccc;
+/* Párrafos */
+main section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    padding: 20px;
+    text-align: justify;
 }
 
-.grupo-2 a {
-    color: #ffcc00;
-    text-decoration: none;
+main section p:hover {
+    color: #000;
     transition: color 0.3s ease;
 }
 
-.grupo-2 a:hover {
-    color: #fff;
+main section {
+    border-left: 5px solid #000;
+}
+
+
+/*-----------------------------------*/
+
+footer {
+    background-color: #111;
+}
+
+.footerContainer {
+    width: 100%;
+    padding: 30px 15px 10px;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.socialIcons a {
+    text-decoration: none;
+    padding: 6px;
+    background-color: white;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.socialIcons a i {
+    font-size: 0.9em;
+    color: black;
+    opacity: 0.9;
+}
+
+.socialIcons a:hover {
+    background-color: #5c5c5c;
+}
+
+.socialIcons a:hover i {
+    color: white;
+}
+
+.footerNav {
+    margin: 15px 0;
+}
+
+.footerNav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 15px;
+}
+
+.footerNav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9em;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.footerNav ul li a:hover {
+    opacity: 1;
+}
+
+.footerBottom {
+    background-color: #000;
+    padding: 8px;
+    text-align: center;
+}
+
+.footerBottom p {
+    color: white;
+    font-size: 0.8em;
+}
+
+.designer {
+    opacity: 0.5;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0 5px;
+    font-size: 0.7em;
 }

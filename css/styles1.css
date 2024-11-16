@@ -1,42 +1,189 @@
-main {
-    display: grid;
-    gap: 20px;
-    grid-auto-flow: dense;
-    margin: 5%;
+@media (max-width:800px) {
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        background-color: #a3a3a3;
+        padding: 20px;
+        text-align: left;
+        padding: 32px 10px;
+    }
+
+    nav {
+        margin-top: 13px;
+    }
+
+    nav a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: #333;
+    }
+
 }
 
-section {
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+@media (max-width:710px) {
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    nav a {
+        margin: 0 10px;
+    }
 }
 
-/* Título principal */
-h1 {
-    text-align: center;
-    font-size: 4.5em;
-    color: #000000;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    text-shadow: -1px -1px #ddd;
+@media (max-width:620px) {
+
+    header {
+        display: none;
+    }
+
+    .headermobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em 2em;
+        background-color: black;
+        color: white;
+        position: relative;
+        z-index: 9;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .headermobile h1 {
+        font-size: 1.8em;
+        font-weight: 700;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .headermobile nav ul {
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(to bottom, black, rgb(168, 168, 168), black);
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 150px;
+        padding-top: 1em;
+        z-index: 10;
+    }
+
+    .headermobile nav ul li {
+        margin: 1em 0;
+        text-align: center;
+    }
+
+    .headermobile nav ul li a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-size: 1em;
+        font-weight: 500;
+        padding: 0.5em;
+        transition: color 0.3s ease;
+    }
+
+    .headermobile a {
+        color: azure;
+        text-decoration: none;
+    }
+
+    .headermobile nav ul li a:hover {
+        color: #00d9ff;
+    }
+
 }
 
-/* Sección "Magic" */
-main h2 {
-    text-align: center;
-    font-size: 2em;
-    margin-bottom: 10px;
-    font-size: 40px;
-    font-weight: bold;
-    background-image: linear-gradient(to right, #575757, #000000);
-    -webkit-background-clip: text;
-    color: transparent;
+/*----------------------------------------*/
+@media (max-width: 700px) {
+    .footerNav ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .footerNav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .socialIcons a {
+        padding: 5px;
+    }
 }
 
-p {
-    text-align: justify;
-    font-size: 1.3em;
-    margin: 10%
+@media (max-width: 500px) {
+    .footerContainer {
+        padding: 20px 10px 5px;
+    }
+
+    .socialIcons {
+        gap: 6px;
+    }
+
+    .socialIcons a {
+        padding: 4px;
+    }
+
+    .socialIcons a i {
+        font-size: 0.8em;
+    }
+
+    .footerNav ul {
+        gap: 6px;
+    }
+
+    .footerNav ul li a {
+        font-size: 0.8em;
+    }
+
+    .footerBottom p {
+        font-size: 0.7em;
+    }
+
+    .designer {
+        font-size: 0.6em;
+    }
+}
+
+@media (max-width: 350px) {
+    .footerContainer {
+        padding: 15px 8px 5px;
+    }
+
+    .socialIcons {
+        gap: 4px;
+    }
+
+    .socialIcons a {
+        padding: 3px;
+    }
+
+    .socialIcons a i {
+        font-size: 0.7em;
+    }
+
+    .footerNav ul {
+        gap: 4px;
+    }
+
+    .footerNav ul li a {
+        font-size: 0.7em;
+    }
+
+    .footerBottom p {
+        font-size: 0.6em;
+    }
+
+    .designer {
+        font-size: 0.5em;
+    }
 }
