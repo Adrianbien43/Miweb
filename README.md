@@ -2,21 +2,21 @@
 
 ###### ✒️Adrián Bienvenido Morales Perdomo✒️
 
-## Información:📖
+## Information:📖
 
-#### Descripción del proyecto:
+#### Project Description:
 
 <p>
-Magic X Logic es un proyecto ambicioso cuyo objetivo es crear un universo propio inspirado en la estructura de Marvel o DC, pero con una temática de ambientación mágica. Este proyecto llevará años en completarse. La idea principal es aprovechar todos mis conocimientos para darle visibilidad y mejorar su alcance, y creo que la página web será una herramienta clave para lograrlo. Mi prioridad es aprender a desarrollar una página web de alta calidad para que, en el futuro (¡esperemos que no muy lejano!), este proyecto pueda escalar significativamente.
+Magic X Logic is an ambitious project that aims to create a universe of its own inspired by the structure of Marvel or DC, but with a magical setting. This project will take years to complete. The main idea is to take advantage of all my knowledge to give it visibility and improve its reach, and I think the website will be a key tool to achieve this. My priority is to learn how to develop a high-quality website so that, in the future (hopefully not too far away!), this project can scale significantly.
 </p>
 
-#### Este proyecto esta conformado por:
+#### This project is made up of:
 
 1. HTML
 2. CSS
 3. JavaScript
 
-#### Estructura del proyecto:
+#### Project structure:
 
 - Miweb
   - html
@@ -43,44 +43,41 @@ Magic X Logic es un proyecto ambicioso cuyo objetivo es crear un universo propio
   
     
 
-#### Librerias utilizadas:
+#### Libraries used:
 
+#### Link:
 
-#### Enlace:
+- Example to follow: https://www.pldspace.com/es/
+- Icon library: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+crossorigin="anonymous" referrerpolicy="no-referrer">
 
-- Ejemplo a seguir: https://www.pldspace.com/es/
-- Libreria de iconos: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-  integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-  crossorigin="anonymous" referrerpolicy="no-referrer">
+#### Additional information
 
-#### Información adicional
+- This is a web project that will act as a catalyst for the promotion of a larger project.
+- All images on this page are original and do not have external copyright, as they have been created by the same author.
+- The page It has been developed thanks to the accumulated knowledge, projects and practices.
+- It has been improved with resources from W3Schools, notes from LND and guides from YouTube.
+- All images are copyrighted.
 
-- Este es un proyecto web que funcionará como catalizador para la promoción de un proyecto de mayor envergadura.
-- Todas las imágenes de esta página son originales y no tienen derechos de autor externos, ya que han sido creadas por el mismo autor.
-- La página se ha desarrollado gracias a los conocimientos, proyectos y prácticas acumuladas.
-- Ha sido mejorado con recursos de W3Schools, apuntes de LND y guías de YouTube.
-- Todas las imágenes tienen derechos de autor.
+## Installation and update:
 
-## Instalación y actualización:
+### Installation:
+<p>Follow the following instructions to install the project.</p>
 
-### Instalación:
-<p>Sigue las siguientes instrucciones para instalar el proyecto.</p>
+- We open the console where you want to download the project.
+- Then we copy the HTTPS url.
+- We use the command: git clone "Next we paste the url that we copied before."
 
-- Abrimos la consola donde quieres desacragar el proyecto.
-- Despues copiamos la url HTTPS.
-- Utilizamos el comando: git clone "Seguido pegamos la url que copiemos antes."
+### Update:
+<p>Follow the following instructions to update the project.</p>
 
-### Actualizar:
-<p>Sigue las siguientes instrucciones para actualizar el proyecto.</p>
+- Remember to update the repositories they have to be inside the project.
+- We use the following commands:
+- git add .
+- git commit -m "Description of changes"
+- git push
+- You may be asked to configure your user and email, we use the following commands:
+- git config --global user.name "Username"
+- git config --global user.email myemail@gmail.com
 
-- Recuerda para actualizar los repositorios tienen que estar dentro del proyecto.
-- Utilizamos los siguientes comandos:
-  - git add .
-  - git commit -m "Descripción de cambios"
-  - git push
-- Puede ser que te pida que configures tu usuario y correo, utilizamos los siguientes comandos:
-  - git config --global user.name "Nombre-usuario"
-  - git config --global user.email micorreo@gmail.com
-
-
-### FIN
